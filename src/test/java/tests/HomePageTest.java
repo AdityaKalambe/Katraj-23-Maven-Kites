@@ -24,7 +24,7 @@ public class HomePageTest extends BaseTest{
 	public void goToTab() {
 		
 		hp.adminMenu();
-		sa.assertFalse(true);
+		sa.assertTrue(true);
 		sa.assertAll();
 	}
 	@Test (priority=2)
