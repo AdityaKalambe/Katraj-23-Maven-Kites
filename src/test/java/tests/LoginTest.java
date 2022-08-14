@@ -42,6 +42,12 @@ public class LoginTest extends BaseTest {
 		lp.submit();
 	}
 	
+	@Test (priority=3)
+	public void currenturl() {
+		
+		String url=driver.getCurrentUrl();
+		System.out.println(url);
+	}
 	
 
 }
