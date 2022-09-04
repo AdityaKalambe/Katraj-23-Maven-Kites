@@ -11,12 +11,14 @@ public class Listeners extends BaseTest implements ITestListener{
 
 	public void onTestFailure(ITestResult result) {
 		
-		try {
-			Screenshot.captureScreen(driver, result.getName());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+			try {
+				Screenshot.captureScreen(driver, result.getName());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	
 		
 		
 		
